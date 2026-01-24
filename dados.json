@@ -1,40 +1,47 @@
 {
-    "config": {
-      "telefone": "555132884938",
-      "mensagem_base": "Olá! Gostaria de saber mais sobre o"
+  "config": {
+    "telefone": "555132884938",
+    "mensagem_base": "Olá! Tenho interesse no"
+  },
+  "novos": [
+    {
+      "id": 1,
+      "modelo": "iPhone 15 Pro Max",
+      "capacidade": "256GB",
+      "preco": "8.500",
+      "descricao": "Novo, lacrado na caixa com 1 ano de garantia Apple."
     },
-    "novos": [
-      {
-        "id": 1,
-        "modelo": "iPhone 15 Pro Max",
-        "capacidade": "256GB",
-        "preco": "8.500",
-        "descricao": "Aparelho novo, lacrado na caixa. 1 ano de garantia Apple após ativação. Disponível em Titanium Natural."
-      },
-      {
-        "id": 2,
-        "modelo": "iPhone 15",
-        "capacidade": "128GB",
-        "preco": "5.400",
-        "descricao": "Novo, lacrado. Tela Super Retina XDR, Dynamic Island e câmera principal de 48MP."
-      }
-    ],
-    "seminovos": [
-      {
-        "id": 3,
-        "modelo": "iPhone 14 Pro",
-        "capacidade": "128GB",
-        "preco": "5.100",
-        "saude": "92% 🔋",
-        "descricao": "Seminovo em estado de novo. FaceID OK, bateria original. Acompanha cabo e película."
-      },
-      {
-        "id": 4,
-        "modelo": "iPhone 13",
-        "capacidade": "128GB",
-        "preco": "3.200",
-        "saude": "88% 🔋",
-        "descricao": "Bateria original, nunca aberto para reparos. Pequenas marcas de uso na lateral."
-      }
-    ]
-  }
+    {
+      "id": 2,
+      "modelo": "iPhone 15",
+      "capacidade": "128GB",
+      "preco": "5.400",
+      "descricao": "Novo, lacrado. Dynamic Island e câmera de 48MP."
+    },
+    {
+      "id": 3,
+      "modelo": "iPhone 13",
+      "capacidade": "128GB",
+      "preco": "3.900",
+      "descricao": "Novo, lacrado. Ótimo custo benefício."
+    }
+  ],
+  "seminovos": [
+    {
+      "id": 4,
+      "modelo": "iPhone 14 Pro",
+      "capacidade": "128GB",
+      "preco": "5.100",
+      "saude": "92% 🔋",
+      "descricao": "Impecável, sem marcas. FaceID OK."
+    },
+    {
+      "id": 5,
+      "modelo": "iPhone 12",
+      "capacidade": "64GB",
+      "preco": "2.500",
+      "saude": "85% 🔋",
+      "descricao": "Acompanha carregador, película de brinde."
+    }
+  ]
+}
