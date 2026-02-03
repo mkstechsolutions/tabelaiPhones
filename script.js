@@ -50,13 +50,19 @@ function render() {
                     <div class="model-info">${item.capacidade} • ${status}</div>
                 </div>
                 <div style="display:flex; align-items:center;">
-                    <div class="price">R$ ${item.preco}</div>
+                    <div class="price-wrapper">
+                        <div class="price">R$ ${item.preco}</div>
+                        <div class="price-label">À VISTA</div>
+                    </div>
                     <div class="arrow" id="arrow-${item.id}"></div>
                 </div>
             </div>
             <div class="content" id="content-${item.id}">
                 <div class="desc-text">${item.descricao}</div>
-                <a href="${linkWhats}" target="_blank" class="btn-whats">Chamar no WhatsApp</a>
+                <div class="card-actions">
+                    <a href="${linkWhats}" target="_blank" class="btn-whats">Chamar no WhatsApp</a>
+                    <div class="btn-estoque-info">${item.estoque || 'Disponível'}</div>
+                </div>
             </div>
         `;
         container.appendChild(card);
