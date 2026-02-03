@@ -6,42 +6,201 @@
   "novos": [
     {
       "id": 1,
-      "modelo": "iPhone 15 Pro Max",
+      "modelo": "iPhone 17 Pro Max",
       "capacidade": "256GB",
-      "preco": "8.500",
-      "descricao": "Novo, lacrado na caixa com 1 ano de garantia Apple."
+      "preco": "10.999",
+      "estoque": "Sob encomenda",
+      "descricao": "Lançamento. Titânio refinado, chip A19 Pro e câmeras de última geração."
     },
     {
       "id": 2,
-      "modelo": "iPhone 15",
-      "capacidade": "128GB",
-      "preco": "5.400",
-      "descricao": "Novo, lacrado. Dynamic Island e câmera de 48MP."
+      "modelo": "iPhone 17 Pro",
+      "capacidade": "256GB",
+      "preco": "9.799",
+      "estoque": "Sob encomenda",
+      "descricao": "Novo, lacrado. Performance profissional em tamanho compacto."
     },
     {
       "id": 3,
+      "modelo": "iPhone 17",
+      "capacidade": "256GB",
+      "preco": "6.999",
+      "estoque": "Sob encomenda",
+      "descricao": "Lançamento 2026. Novas cores e eficiência energética aprimorada."
+    },
+    {
+      "id": 4,
+      "modelo": "iPhone 16 Pro Max",
+      "capacidade": "256GB",
+      "preco": "8.799",
+      "estoque": "Sob encomenda",
+      "descricao": "Novo, lacrado. Tela gigante de 6.9 polegadas e botão de controle de câmera."
+    },
+    {
+      "id": 5,
+      "modelo": "iPhone 16 Pro",
+      "capacidade": "256GB",
+      "preco": "9.799",
+      "estoque": "Sob encomenda",
+      "descricao": "Novo. Equipado com chip A18 Pro e suporte total à Apple Intelligence."
+    },
+    {
+      "id": 6,
+      "modelo": "iPhone 16",
+      "capacidade": "128GB",
+      "preco": "4.999",
+      "estoque": "Disponível",
+      "descricao": "Novo, lacrado. Inclui botão de Ação e novo sistema de câmeras."
+    },
+    {
+      "id": 7,
+      "modelo": "iPhone 15 Pro Max",
+      "capacidade": "256GB",
+      "preco": "6.999",
+      "estoque": "Sob encomenda",
+      "descricao": "Novo, estoque de varejo. Primeiro com USB-C e acabamento em Titânio."
+    },
+    {
+      "id": 8,
+      "modelo": "iPhone 15 Pro",
+      "capacidade": "128GB",
+      "preco": "8.799",
+      "estoque": "Sob encomenda",
+      "descricao": "Novo. Performance Pro com design leve e bordas finas."
+    },
+    {
+      "id": 9,
+      "modelo": "iPhone 15",
+      "capacidade": "128GB",
+      "preco": "4.399",
+      "estoque": "Sob encomenda",
+      "descricao": "Novo, lacrado. Dynamic Island e excelente câmera de 48MP."
+    },
+    {
+      "id": 10,
+      "modelo": "iPhone 14",
+      "capacidade": "128GB",
+      "preco": "3.799",
+      "estoque": "Disponível",
+      "descricao": "Novo, lacrado. Confiável e com ótimo desempenho para o dia a dia."
+    },
+    {
+      "id": 11,
       "modelo": "iPhone 13",
       "capacidade": "128GB",
-      "preco": "3.900",
-      "descricao": "Novo, lacrado. Ótimo custo benefício."
+      "preco": "4.299",
+      "estoque": "Sob encomenda",
+      "descricao": "Novo, lacrado. O melhor custo-benefício para um iPhone de entrada em 2026."
     }
   ],
   "seminovos": [
     {
-      "id": 4,
-      "modelo": "iPhone 14 Pro",
-      "capacidade": "128GB",
-      "preco": "5.100",
-      "saude": "92% 🔋",
-      "descricao": "Impecável, sem marcas. FaceID OK."
+      "id": 12,
+      "modelo": "iPhone 16 Pro Max",
+      "capacidade": "256GB",
+      "preco": "6.999",
+      "saude": ">80% 🔋",
+      "estoque": "Sob encomenda",
+      "descricao": "Seminovo premium. Poucos ciclos de bateria, na garantia de fábrica."
     },
     {
-      "id": 5,
-      "modelo": "iPhone 12",
-      "capacidade": "64GB",
-      "preco": "2.500",
-      "saude": "85% 🔋",
-      "descricao": "Acompanha carregador, película de brinde."
+      "id": 13,
+      "modelo": "iPhone 16 Pro",
+      "capacidade": "256GB",
+      "preco": "5.999",
+      "saude": ">80% 🔋",
+      "estoque": "Sob encomenda",
+      "descricao": "Estado de novo. Acompanha caixa e cabo original."
+    },
+    {
+      "id": 14,
+      "modelo": "iPhone 16",
+      "capacidade": "128GB",
+      "preco": "4.290",
+      "saude": ">80% 🔋",
+      "estoque": "Consulte",
+      "descricao": "Impecável. Sem riscos, FaceID e True Tone funcionando perfeitamente."
+    },
+    {
+      "id": 15,
+      "modelo": "iPhone 15 Pro Max",
+      "capacidade": "256GB",
+      "preco": "5.799",
+      "saude": ">80% 🔋",
+      "estoque": "Sob encomenda",
+      "descricao": "Excelente estado. Carregamento USB-C, muito veloz."
+    },
+    {
+      "id": 16,
+      "modelo": "iPhone 15 Pro",
+      "capacidade": "128GB",
+      "preco": "5.799",
+      "saude": ">80% 🔋",
+      "estoque": "Sob encomenda",
+      "descricao": "Pequenas marcas de uso no aro de titânio. Funcionamento 100%."
+    },
+    {
+      "id": 17,
+      "modelo": "iPhone 15",
+      "capacidade": "128GB",
+      "preco": "3.200",
+      "saude": ">80% 🔋",
+      "estoque": "Disponível - 1 unidade",
+      "descricao": "Aparelho vitrine. Acompanha carregador e película."
+    },
+    {
+      "id": 18,
+      "modelo": "iPhone 14",
+      "capacidade": "128GB",
+      "preco": "2.899",
+      "saude": ">80% 🔋",
+      "estoque": "Disponível - 3 unidades",
+      "descricao": "Tela sempre usada com película. Bateria original."
+    },
+    {
+      "id": 19,
+      "modelo": "iPhone 14 Pro Max",
+      "capacidade": "128GB",
+      "preco": "4.699",
+      "saude": ">80% 🔋",
+      "estoque": "Sob encomenda",
+      "descricao": "Tela sempre usada com película. Bateria original."
+    },
+    {
+      "id": 20,
+      "modelo": "iPhone 14 Pro",
+      "capacidade": "128GB",
+      "preco": "3.699",
+      "saude": ">80% 🔋",
+      "estoque": "Sob encomenda",
+      "descricao": "Dynamic Island disponível. Ótima conservação."
+    },
+    {
+      "id": 21,
+      "modelo": "iPhone 13 Pro Max",
+      "capacidade": "128GB",
+      "preco": "3.599",
+      "saude": ">80% 🔋",
+      "estoque": "Sob encomenda",
+      "descricao": "Bateria monstra. Tela de 120Hz impecável."
+    },
+    {
+      "id": 22,
+      "modelo": "iPhone 13 Pro",
+      "capacidade": "128GB",
+      "preco": "3.100",
+      "saude": ">80% 🔋",
+      "estoque": "Sob encomenda",
+      "descricao": "Seminovo com 3 meses de garantia pela loja."
+    },
+    {
+      "id": 23,
+      "modelo": "iPhone 13",
+      "capacidade": "128GB",
+      "preco": "2.299",
+      "saude": ">80% 🔋",
+      "estoque": "Disponível",
+      "descricao": "Barato para sair rápido. Tudo funcionando."
     }
   ]
 }
