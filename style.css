@@ -95,9 +95,17 @@ header p { color: #64748b; font-size: 0.8rem; margin-top: 5px; font-weight: 600;
 }
 .model-name { font-size: 1.05rem; font-weight: 700; color: #f8fafc; }
 .model-info { font-size: 0.75rem; color: #94a3b8; margin-top: 3px; }
-.price { font-size: 1.2rem; font-weight: 800; color: #a78bfa; }
 
-/* ESTILO DA SETA COM ANIMAÇÃO */
+/* PREÇO E À VISTA */
+.price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.price { font-size: 1.2rem; font-weight: 800; color: #a78bfa; line-height: 1; }
+.price-label { font-size: 0.6rem; font-weight: 900; color: #64748b; letter-spacing: 1px; margin-top: 4px; }
+
+/* SETA COM ANIMAÇÃO */
 .arrow {
     width: 9px; 
     height: 9px; 
@@ -106,7 +114,6 @@ header p { color: #64748b; font-size: 0.8rem; margin-top: 5px; font-weight: 600;
     transform: rotate(45deg);
     margin-left: 15px;
     transition: 0.3s ease;
-    /* Adiciona o pulso */
     animation: pulseArrow 2s infinite;
 }
 
@@ -116,10 +123,7 @@ header p { color: #64748b; font-size: 0.8rem; margin-top: 5px; font-weight: 600;
     100% { opacity: 0.4; transform: rotate(45deg) translate(0, 0); }
 }
 
-.arrow.up { 
-    transform: rotate(-135deg); 
-    animation: none; /* Para de pulsar quando aberto */
-}
+.arrow.up { transform: rotate(-135deg); animation: none; }
 
 /* CONTEÚDO EXPANSÍVEL */
 .content {
@@ -129,23 +133,14 @@ header p { color: #64748b; font-size: 0.8rem; margin-top: 5px; font-weight: 600;
     background: #16191e;
 }
 .content.open { max-height: 500px; padding-bottom: 20px; }
+.desc-text { font-size: 0.85rem; color: #cbd5e1; line-height: 1.5; padding-top: 15px; border-top: 1px solid #2d333b; }
 
-.desc-text {
-    font-size: 0.85rem; color: #cbd5e1; line-height: 1.5;
-    padding-top: 15px; border-top: 1px solid #2d333b;
-}
+/* AÇÕES E ESTOQUE */
+.card-actions { display: flex; gap: 10px; margin-top: 15px; }
+.btn-whats { flex: 2; display: flex; align-items: center; justify-content: center; background: #10b981; color: white; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: 700; transition: 0.2s; }
+.btn-estoque-info { flex: 1; display: flex; align-items: center; justify-content: center; background: #2d333b; color: #a78bfa; border: 1px solid #4c1d95; border-radius: 10px; font-weight: 700; font-size: 0.75rem; text-align: center; }
 
-/* BOTÃO WHATSAPP */
-.btn-whats {
-    display: flex; align-items: center; justify-content: center;
-    background: #10b981; color: white; padding: 14px;
-    border-radius: 10px; text-decoration: none; font-weight: 700;
-    margin-top: 15px; transition: 0.2s;
-}
-.btn-whats:active { transform: scale(0.96); }
+/* BOTÃO FLUTUANTE */
+.floating-support { position: fixed; bottom: 25px; right: 25px; width: 55px; height: 55px; background: #7c3aed; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4); text-decoration: none; z-index: 999; }
 
-/* FOOTER */
-footer {
-    margin-top: 40px; text-align: center;
-    padding-bottom: 20px; color: #64748b; font-size: 0.75rem;
-}
+footer { margin-top: 40px; text-align: center; padding-bottom: 20px; color: #64748b; font-size: 0.75rem; }
