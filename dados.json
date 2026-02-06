@@ -143,7 +143,7 @@
       "id": 17,
       "modelo": "iPhone 15",
       "capacidade": "128GB",
-      "preco": "3.200",
+      "preco": "3.299",
       "saude": ">80% 🔋",
       "estoque": "Disponível - 1 unidade",
       "descricao": "Aparelho vitrine. Acompanha carregador e película."
@@ -204,3 +204,4 @@
     }
   ]
 }
+
