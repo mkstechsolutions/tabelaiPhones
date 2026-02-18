@@ -83,15 +83,7 @@
       "preco": "3.799",
       "estoque": "Disponível",
       "descricao": "Novo, lacrado. Confiável e com ótimo desempenho para o dia a dia."
-    },
-    {
-      "id": 11,
-      "modelo": "iPhone 13",
-      "capacidade": "128GB",
-      "preco": "4.299",
-      "estoque": "Sob encomenda",
-      "descricao": "Novo, lacrado. O melhor custo-benefício para um iPhone de entrada em 2026."
-    }
+    }  
   ],
   "seminovos": [
     {
@@ -204,4 +196,5 @@
     }
   ]
 }
+
 
