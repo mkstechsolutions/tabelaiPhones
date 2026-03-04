@@ -37,7 +37,7 @@
       "estoque": "Disponível",
       "descricao": "Novo, lacrado. Inclui botão de Ação e novo sistema de câmeras."
     },
-   ,
+  
     {
       "id": 9,
       "modelo": "iPhone 15",
@@ -166,6 +166,7 @@
     }
   ]
 }
+
 
 
 
