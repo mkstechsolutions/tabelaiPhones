@@ -28,22 +28,7 @@
       "estoque": "Sob encomenda",
       "descricao": "Lançamento 2026. Novas cores e eficiência energética aprimorada."
     },
-    //{
-    //  "id": 4,
-    //  "modelo": "iPhone 16 Pro Max",
-    //  "capacidade": "256GB",
-   //  "preco": "8.799",
-   //   "estoque": "Sob encomenda",
-   //   "descricao": "Novo, lacrado. Tela gigante de 6.9 polegadas e botão de controle de câmera."
-   // },
-   // {
-   //   "id": 5,
-   //   "modelo": "iPhone 16 Pro",
-   //   "capacidade": "256GB",
-   //   "preco": "9.799",
-   //   "estoque": "Sob encomenda",
-   //   "descricao": "Novo. Equipado com chip A18 Pro e suporte total à Apple Intelligence."
-   // },
+    
     {
       "id": 6,
       "modelo": "iPhone 16",
@@ -52,22 +37,7 @@
       "estoque": "Disponível",
       "descricao": "Novo, lacrado. Inclui botão de Ação e novo sistema de câmeras."
     },
-    {
-   //   "id": 7,
-   //   "modelo": "iPhone 15 Pro Max",
-   //   "capacidade": "256GB",
-   //   "preco": "6.999",
-   //   "estoque": "Sob encomenda",
-   //   "descricao": "Novo, estoque de varejo. Primeiro com USB-C e acabamento em Titânio."
-   // },
-   // {
-   //   "id": 8,
-   //   "modelo": "iPhone 15 Pro",
-   //   "capacidade": "128GB",
-   //   "preco": "8.799",
-   //   "estoque": "Sob encomenda",
-  //    "descricao": "Novo. Performance Pro com design leve e bordas finas."
-  //  },
+   ,
     {
       "id": 9,
       "modelo": "iPhone 15",
@@ -196,6 +166,7 @@
     }
   ]
 }
+
 
 
 
