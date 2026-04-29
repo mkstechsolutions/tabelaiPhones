@@ -54,19 +54,74 @@ header p { color: #64748b; font-size: 0.8rem; margin-top: 5px; font-weight: 600;
 }
 .tab-btn.active { background: #7c3aed; color: white; }
 
-/* CARDS */
+/* CARDS - AJUSTE DE ALINHAMENTO */
 .card { background: #1a1d23; border: 1px solid #2d333b; border-radius: 16px; margin-bottom: 12px; overflow: hidden; }
-.card-header { padding: 20px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+
+.card-header { 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    cursor: pointer; 
+    gap: 15px;
+}
+/* Efeito de Hover Profissional no Card Header */
+/* Efeito de UI Profissional - Hover no Header do Card */
+.card-header {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Transição suave e natural */
+}
+
+.card-header:hover {
+    background: #1e2229; /* Fundo levemente mais claro que o card */
+    transform: scale(1.01); /* Escala bem sutil para não quebrar o layout */
+    box-shadow: inset 0 0 15px rgba(124, 58, 237, 0.15), 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Garante que a sombra fique sobre os outros cards */
+}
+
+.card-header:hover .model-name {
+    color: #a78bfa;
+}
+
+.card-header:hover .arrow { 
+    border-color: #a78bfa; 
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.card-header:hover .arrow.up { 
+    transform: rotate(-135deg) translate(-2px, -2px);
+}
+
+/* Ajuste na sombra geral do card para dar profundidade */
+.card:hover {
+    border-color: #4c1d95; /* A borda acende no hover */
+    transition: 0.3s;
+}
+
+/* Wrapper que empurra o preço para a direita */
+.model-content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .model-name { font-size: 1.05rem; font-weight: 700; color: #f8fafc; }
 .model-info { font-size: 0.75rem; color: #94a3b8; margin-top: 3px; }
 
-.price-wrapper { display: flex; flex-direction: column; align-items: flex-end; }
+.price-wrapper { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    text-align: right;
+    min-width: fit-content;
+}
+
 .price { font-size: 1.2rem; font-weight: 800; color: #a78bfa; line-height: 1; }
 .price-label { font-size: 0.6rem; font-weight: 900; color: #64748b; margin-top: 4px; }
 
 .arrow {
     width: 9px; height: 9px; border-right: 2px solid #7c3aed; border-bottom: 2px solid #7c3aed;
-    transform: rotate(45deg); margin-left: 15px; transition: 0.3s ease;
+    transform: rotate(45deg); margin-left: 5px; transition: 0.3s ease;
+    flex-shrink: 0;
 }
 .arrow.up { transform: rotate(-135deg); }
 
@@ -78,76 +133,19 @@ header p { color: #64748b; font-size: 0.8rem; margin-top: 5px; font-weight: 600;
 .btn-whats {
     display: block; width: 100%; background: #10b981; color: white; padding: 14px;
     border-radius: 10px; text-decoration: none; font-weight: 700; text-align: center;
-    margin-top: 15px; border: none; cursor: pointer;
+    margin-top: 15px; border: none; cursor: pointer; transition: 0.2s;
 }
+.btn-whats:active { transform: scale(0.95); }
 
 /* MODAL ADM */
-.modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); }
+.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); }
 .modal-content { background: #1a1d23; margin: 10% auto; padding: 25px; border-radius: 20px; max-width: 400px; border: 1px solid #7c3aed; }
 .close { float: right; cursor: pointer; font-size: 24px; color: #64748b; }
 textarea.search-box { height: 80px; resize: none; }
 
-.floating-support { position: fixed; bottom: 25px; right: 25px; width: 55px; height: 55px; background: #7c3aed; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; text-decoration: none; box-shadow: 0 4px 15px rgba(124,58,237,0.4); }
-
-footer { margin-top: 40px; text-align: center; padding-bottom: 20px; color: #64748b; font-size: 0.75rem; }
-
-/* Ícone da Calculadora no Card */
-.calc-icon {
-    font-size: 1.4rem;
-    text-decoration: none;
-    background: #2d333b;
-    padding: 5px 8px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-.calc-icon:hover { background: #7c3aed; }
-
-/* Ajuste no botão de excluir para não quebrar o layout */
-.btn-whats { transition: 0.2s; }
-.btn-whats:active { transform: scale(0.95); }
-
-/* RESET E BASE */
-* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-body { background-color: #0f1115; min-height: 100vh; font-family: -apple-system, system-ui, sans-serif; color: #ffffff; padding: 20px; }
-.container { max-width: 500px; margin: 20px auto; }
-
-/* HEADER */
-header { text-align: center; margin-bottom: 40px; }
-.brand-name { font-size: 2.1rem; font-weight: 900; text-transform: uppercase; background: linear-gradient(to right, #4c1d95 20%, #a78bfa 40%, #a78bfa 60%, #4c1d95 80%); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: shine 4s linear infinite; }
-@keyframes shine { to { background-position: 200% center; } }
-header p { color: #64748b; font-size: 0.8rem; margin-top: 5px; font-weight: 600; letter-spacing: 1px; }
-
-/* UI ELEMENTS */
-.search-box { background: #1a1d23; border: 1px solid #2d333b; padding: 15px 20px; border-radius: 12px; width: 100%; margin-bottom: 20px; font-size: 15px; color: white; outline: none; }
-.search-box:focus { border-color: #7c3aed; }
-.tabs { display: flex; background: #1a1d23; padding: 5px; border-radius: 12px; margin-bottom: 25px; border: 1px solid #2d333b; }
-.tab-btn { flex: 1; border: none; padding: 12px; border-radius: 8px; font-weight: 700; font-size: 0.8rem; cursor: pointer; background: transparent; color: #94a3b8; }
-.tab-btn.active { background: #7c3aed; color: white; }
-
-/* CARDS */
-.card { background: #1a1d23; border: 1px solid #2d333b; border-radius: 16px; margin-bottom: 12px; overflow: hidden; }
-.card-header { padding: 20px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
-.model-name { font-size: 1.05rem; font-weight: 700; color: #f8fafc; }
-.model-info { font-size: 0.75rem; color: #94a3b8; margin-top: 3px; }
-.price { font-size: 1.2rem; font-weight: 800; color: #a78bfa; }
-.price-label { font-size: 0.6rem; color: #64748b; text-align: right; }
-.arrow { width: 9px; height: 9px; border-right: 2px solid #7c3aed; border-bottom: 2px solid #7c3aed; transform: rotate(45deg); transition: 0.3s; }
-.arrow.up { transform: rotate(-135deg); }
-
-/* CONTENT */
-.content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 20px; background: #16191e; }
-.content.open { max-height: 500px; padding-bottom: 20px; }
-.desc-text { font-size: 0.85rem; color: #cbd5e1; line-height: 1.5; padding-top: 15px; border-top: 1px solid #2d333b; }
-.btn-whats { display: block; background: #10b981; color: white; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: 700; text-align: center; margin-top: 15px; border: none; cursor: pointer; }
-
-/* MODAL */
-.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); }
-.modal-content { background: #1a1d23; margin: 10% auto; padding: 25px; border-radius: 20px; max-width: 400px; border: 1px solid #7c3aed; }
-.close { float: right; cursor: pointer; font-size: 24px; color: #64748b; }
-
 /* FLOATING BUTTONS */
 .floating-btn { position: fixed; right: 20px; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.4); z-index: 999; }
 .support { bottom: 20px; background: #7c3aed; }
-.calc { bottom: 85px; background: #1a1d23; border: 1px solid #7c3aed; color: white; }
+.calc { bottom: 85px; background: #1a1d23; border: 1px solid #7c3aed; color: white;}
 
-footer { margin-top: 40px; text-align: center; color: #64748b; font-size: 0.75rem; padding-bottom: 20px; }
+footer { margin-top: 40px; text-align: center; padding-bottom: 20px; color: #64748b; font-size: 0.75rem; }
