@@ -148,6 +148,6 @@ header p { color: #64748b; font-size: 0.8rem; margin-top: 5px; font-weight: 600;
 /* FLOATING BUTTONS */
 .floating-btn { position: fixed; right: 20px; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.4); z-index: 999; }
 .support { bottom: 20px; background: #7c3aed; }
-.calc { bottom: 85px; background: #1a1d23; border: 1px solid #7c3aed; }
+.calc { bottom: 85px; background: #1a1d23; border: 1px solid #7c3aed; color: white; }
 
 footer { margin-top: 40px; text-align: center; color: #64748b; font-size: 0.75rem; padding-bottom: 20px; }
