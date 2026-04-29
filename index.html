@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela MKS</title>
+    <title>MKS Tech Solutions | Vitrine</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div class="container">
         <header>
             <h1 class="brand-name">MKS Tech Solutions</h1>
-            <p>CONECTANDO VOCÊ AO FUTURO</p>
+            <p>CONECTANDO VOCÊ <span onclick="abrirLoginAdm()" style="cursor: default;">AO</span> FUTURO</p>
         </header>
 
         <input type="text" id="inputPesquisa" class="search-box" placeholder="Buscar modelo...">
@@ -28,11 +28,35 @@
         </footer>
     </div>
 
-    <a href="https://mkstechsolutions.github.io/chatBotMKS/" target="_blank" class="floating-support" title="Dúvidas?">
+    <div id="modal-adm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharAdm()">&times;</span>
+            <h3>Painel do Administrador</h3>
+            <div id="form-cadastro">
+                <input type="text" id="add-modelo" placeholder="Modelo (Ex: iPhone 15)" class="search-box">
+                <input type="text" id="add-capacidade" placeholder="Armazenamento (Ex: 128GB)" class="search-box">
+                <input type="text" id="add-saude" placeholder="Saúde Bateria (Ex: 100%)" class="search-box">
+                <input type="text" id="add-preco" placeholder="Valor (Ex: 4.500)" class="search-box">
+                <textarea id="add-desc" placeholder="Descrição do aparelho..." class="search-box"></textarea>
+                
+                <label style="font-size: 0.8rem; color: #a78bfa;">Tipo de Aparelho:</label>
+                <select id="add-tipo" class="search-box">
+                    <option value="novos">Novo</option>
+                    <option value="seminovos">Seminovo</option>
+                </select>
+                
+                <button onclick="salvarProduto()" id="btn-salvar" class="btn-whats">Salvar na Planilha</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://mkstechsolutions.github.io/calculadora/" id="btn-calc" class="floating-btn calc" title="Calculadora">
+        <span>🧮</span>
+    </a>
+    <a href="https://mkstechsolutions.github.io/chatBotMKS/" target="_blank" class="floating-btn support" title="Dúvidas?">
         <span>💬</span>
     </a>
 
     <script src="script.js"></script>
 </body>
 </html>
-
