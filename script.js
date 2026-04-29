@@ -55,9 +55,9 @@ function render() {
         card.className = 'card';
         card.innerHTML = `
             <div class="card-header" onclick="toggle(${index})">
-                <div>
+                <div class="model-content-wrapper">
                     <div class="model-name">${item.modelo}</div>
-                    <div class="model-info">${item.capacidade} • ${isSeminovo ? item.saude : 'Novo'}</div>
+                    <div class="model-info">${item.capacidade} • ${isSeminovo ? item.saude :  'Novo'}🔋</div>
                 </div>
                 <div class="price-wrapper">
                     <div class="price">R$ ${item.preco}</div>
@@ -91,7 +91,6 @@ function render() {
         btnNovo.style.background = '#4c1d95';
         btnNovo.onclick = () => {
             linhaSendoEditada = null;
-            // Limpeza manual dos campos
             document.getElementById('add-modelo').value = '';
             document.getElementById('add-capacidade').value = '';
             document.getElementById('add-saude').value = '';
