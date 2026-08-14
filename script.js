@@ -6,7 +6,7 @@ let modoEdicao = false;
 let linhaSendoEditada = null; 
 
 const CONFIG = {
-    telefone: "555132884938",
+    telefone: "5551989426091",
     mensagem_base: "Olá! Tenho interesse no"
 };
 
